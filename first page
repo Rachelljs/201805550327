@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>first page</title>
+		<style>
+			.span{
+				font-size: 50px;
+				font: "黑体";
+			}	
+			a{font-size: 45px;}
+			li{
+				font-size: 40px;
+			}
+			p{font-size: 35px;}
+			strike{font-size: 30px;
+			}
+			h{
+				font-size: 25px;
+			}sup{font-size: 30px;}
+			 sub{font-size: 30px;}
+			marquee{font-size: 20px;}i{font-size: 25px;}
+			kbd{font-size: 35px;}
+		</style>
+	</head>
+	<body>
+		<span class="span">web工程的奇妙之旅正式开始啦啦啦(span元素)</span><br />
+		<a href="https://www.guaze.com/juzi/19415.html">“每次过安检，我总是过不去”“他们说我心里装着一个你”（a元素）</a>
+		<li style="color: coral;">“我最近要换个造型。”““什么造型？”“没你不行。”（li元素）</li>
+		<p style="color: crimson;">“你知道你和星星的区别吗？”“不知道。”“星星在天上，你在我心里。”（p元素）</p>
+		<strike style="color: cyan;">最近有谣言说我喜欢你，我澄清一下，那不是谣言。</strike>
+		<h style="color: darksalmon;">我是九你是三，除了你还是你（h元素）</h>
+		<marquee style="color: yellow;">我肯定是盐吃多了，不让怎么总是闲的想你(marquee元素)</marquee>
+		<i style="color: darkseagreen;">喜欢你是件很麻烦的事，但我偏偏喜欢麻烦（i元素）</i><br />
+		<sub style="color: deeppink;">你是哪里的人啊</sub><sup style="color:lightpink ;">我是你的心上人</sup><br />
+		<kbd style="color: #000000;">算命的说我旺夫你要不试一下(kbd元素)</kbd>
+	</body>
+</html>
