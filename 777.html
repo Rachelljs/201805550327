@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>my javascript</title>
+		<style>
+			div {
+				width: 960px;
+				height: auto;
+				margin: 0 auto;
+				background-color: gainsboro;
+				border: 2px double black;
+			}
+			
+			a,
+			p {
+				font-size: 20px;
+			}
+		</style>
+		<script>
+			function changep1() {
+				x = document.getElementById("p1");
+				x.style.color = "chocolate";
+				x.style.backgroundColor = "yellow";
+				x.innerHTML = x.innerHTML + "<br />" + "剁手使我痛并快乐着";
+			}
+
+			function deletep() {
+				var parent = document.getElementById("div1");
+				var child = document.getElementById("p2");
+				parent.removeChild(child);
+			}
+
+			function changeall() {
+				document.getElementById("p3").innerHTML = "“每次过安检，我总是过不去”“他们说我心里装着一个你”!";
+				x = document.getElementById("p3");
+				x.style.color = "fuchsia";
+			}
+
+			function newA() {
+				var div = document.getElementById("div1");
+				div.appendChild(aaa);
+				aaa.innerHTML = "</br>" + "伤不起真的伤不起";
+				aaa.setAttribute("href", "#");
+			}
+
+			function deletea() {
+
+				var elem = document.getElementById('div1'); // 按 id 获取要删除的元素
+
+				elem.parentNode.removeChild(elem);
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: antiquewhite;width:120px;height:20px;padding:40px;color:black;">把鼠标移到上面</div>
+
+		<script>
+			function mOver(obj) {
+				obj.innerHTML = "哎呦,你老帅了！"
+			}
+
+			function mOut(obj) {
+				obj.innerHTML = "把鼠标移到上面"
+			}
+		</script>
+		<button onclick="displayDate()">注意时间哈！</button>
+
+		<script>
+			function displayDate() {
+				document.getElementById("demo").innerHTML = Date();
+			}
+		</script>
+
+		<p id="demo"></p>
+
+		<div id="div1">
+			<p id="p1">双十一剁手的同志，相约三田</p>
+			<p id="p2">还好我买了个锅，把土煮热了吃</p>
+			<p id="p3">这个双十一过了，别担心，还有双十二，六一八,哭唧唧</p>
+			<a id="aaa">想想就很心塞啊啊啊啊啊</a><br />
+		</div>
+		<div>
+			<button onclick="changep1()">改变p元素</button><br />
+			<button onclick="deletep()">删除p元素</button><br />
+			<button onclick="changeall()">意想不到的我鸭</button><br />
+			<button onclick="newA()">增加a元素</button><br />
+			<button onclick="deletea()">删除所有的元素</button>
+		</div>
+	</body>
+
+</html>
