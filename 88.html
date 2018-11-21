@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			table{
+				width: 600px;
+			}
+			tr{
+				text-align: center;
+			}
+			.even{
+				background-color:cornflowerblue;
+			}
+			.odd{
+				background-color: darkgrey;
+			}
+		</style>
+	</head>
+    <body>
+    	<script type="text/javascript">
+    		window.onload=function(){
+    			var tab=document.getElementById("tab1");
+    			var tbody=document.getElementsByTagName("body");
+    			var trs=document.getElementsByTagName("tr");
+    			for(var i=0;i<trs.length;i++){
+    				trs[i].className=(i%2==0)?"even":"odd";
+    			}
+    		}
+    		 function bnt1() {
+				var tab = document.getElementById('tab');
+				var rowIndex = tab.rows.length + 1;
+
+				//添加一行;
+				var tr = tab.insertRow();
+				var name1 = document.getElementById("name1").value;
+				var sex=document.getElementById("sex").value;
+				tr.onmouseover = tr.className = "displayStyle";
+				tr.onmouseout = tr.className = "hideStyle";
+				tr.onclick = function() {
+					this.className = "onClickChangeStyle(this)";
+				}
+
+				var td1 = tr.insertCell();
+				var td2 = tr.insertCell();
+				var td3 = tr.insertCell();
+				var td4 = tr.insertCell();
+
+				td1.innerHTML = "" + rowIndex-1;
+				td2.innerHTML = name1;
+				td3.innerHTML = sex;
+				td4.innerHTML = "<a href='#' onclick='deleterow(this)'>删除</a>";
+				initRows(tab);
+			}
+
+    		function deleterow(obj) {
+				var tab = document.getElementById('tab');
+				//获取tr对象;
+				var tr = obj.parentNode.parentNode;
+
+				if(tab.rows.length > 1) {
+					//tr.parentNode，指的是，table对象;移除子节点;
+					tr.parentNode.removeChild(tr);
+				}
+				//重新生成行号;
+				initRows(document.getElementById('tab'));
+			}
+    	</script>
+		<u>姓名</u><u><input type="text" id="name1"></u>
+		<u>性别</u>
+		<u>
+		   <select type="radio" id="sex">
+		      <option>女</option>
+		      <option>男</option>
+		      <option>变态</option>
+		   </select>
+		</u>
+		<button onclick="bnt1()">增加按钮</button>
+		<table id="tab">
+			<tr style="background-color: dodgerblue;color: white;"onmouseout="this.style.color='yellow'"onmouseover="this.style.color='red'">
+				<td>编号</td>
+				<td>姓名</td>
+				<td>性别</td>
+				<td>操作</td>
+			</tr>
+			<tbody>
+			<tr>
+				<td>1</td>
+				<td id="xingming">张三</td>
+				<td>女</td>  
+				<td><a href="#" onclick="deleterow(this)">删除</a></td>
+				
+			</tr>
+			<tr>
+				<td>2</td>
+				<td id="xingming">李四</td>
+				<td>女</td>
+				<td><a href="#" onclick="deleterow(this)">删除</a></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td id="xingming">王五</td>
+				<td>男</td>
+				<td><a href="#" onclick="deleterow(this)">删除</a></td>
+			</tr>
+			</tbody>
+		</table>
+	</body>
+
+</html>
