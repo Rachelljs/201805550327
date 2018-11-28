@@ -1,90 +1,86 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>jquery模拟windows8风格的菜单效果</title>
+		<link rel="stylesheet" type="text/css" href="lanrenzhijia.css" />
+		<script src="jquery-1.2.6.min.js" type="text/javascript"></script>
+		<script src="jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="jquery.kwicks-1.5.1.pack.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$().ready(function() {
+				$('.kwicks').kwicks({
+					max: 205,
+					spacing: 5
+				});
+			});
+		</script>
 		<style>
-			#top{
-				width 960px;border: double;height: 500px;display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
+			.TOP{
+				padding-bottom: 20PX;padding-top: 20PX;padding-left: 50PX;
 			}
-			.box1-1{
-				display: block;float:left;width: 100px;height: 60px;background-color: #87CEFA;margin-left: 10px;
-				margin-bottom: 10px;margin-right: 10px;margin-top: 30px;text-align: center;position: relative;
+			a{
+				font-size: 20px;text-decoration: none;
 			}
-			.box1-2{
-				display: block;float:left;width: 100px;height: 60px;background-color:#FFB6C1;
-			}
-			.diva{text-decoration: none;}
-			.divb{text-decoration: none;margin-top: 60px;}
-			.boxbottom{
-				float: center;background-color: #D8BFD8;text-align: center;
-			}
-			.font4{
-font-size: 40px;
-text-shadow: 5px 5px 5px black, 0px 0px 2px red, 2px 2px 3px green;text-align: center;
-}
 		</style>
 	</head>
-	<body background="timg.jpg">
-		<video autoplay="autoplay"hidden="hidden">
-			<source src="img/毛不易 - 不染.mp3"></source>
-		</video>
-		<div id="top" class="boxtop">
-			<div class="box1-1">
-				<a href="indexfirst.html" class="diva">
-					<span>第一次作业</span>
-				</a>
-			</div>
-			<div class="box1-2">
-				<a href="gaokao.html" class="divb">
-					<span>第二次作业</span>
-				</a>
-			</div>
-			<div class="box1-1">
-				<a href="index1.html">
-					<span>第三次作业</span>
-				</a>
-			</div>
-			<div class="box1-2">
-				<a href="index4.html" class="divb">
-					<span>第四次作业</span>
-				</a>
-			</div>
-			<div class="box1-1">
-				<a href="5.html" class="diva">
-					<span>第五次作业</span>
-				</a>
-			</div>
-			<div class="box1-2">
-				<a href="666.html" class="divb">
-					<span>第六次作业</span>
-				</a>
-			</div>
-			<div class="box1-1">
-				<a href="777.html" class="diva">
-					<span>第七次作业</span>
-				</a>
-			</div>
-			<div class="box1-2">
-				<a href="88.html" class="divb">
-					<span>第八次作业</span>
-				</a>
-			</div>
-			<div class="box1-1">
-				<a href="like.html" class="divb">
-					<span>第九次作业</span>
-				</a>
-			</div>
-			
-			
-		</div>
-		<div class="boxbottom">
-			<span class="font4">
-				李佳燊201805550327
-			</span>
-		</div>
-	</body>
+
+	<body>
+		<ul class="kwicks horizontal">
+			<li id="kwick1">
+				<div class="TOP"><a href="indexfirst.html">
+					The First 
+				</a></div>
+			</li>
+			<li id="kwick2">
+				<div class="TOP"><a href="gaokao.html">
+					The Second 
+				</a></div>
+			</li>
+			<li id="kwick3">
+				<div class="TOP"><a href="index1.html">
+					The third 
+				</a></div>
+			</li>
+			<li id="kwick4">
+				<div class="TOP"><a href="index4.html">
+					The Forth
+				</a></div>
+			</li>
+			<li id="kwick1">
+				<div class="TOP"><a href="5.html">
+					The Fifth
+				</a></div>
+			</li>
+			<li id="kwick2">
+				<div class="TOP"><a href="666.html">
+					The sixth 
+				</a></div>
+			</li>
+			<li id="kwick3">
+				<div class="TOP"><a href="777.html">
+					The  Seventh
+				</a></div>
+			</li>
+			<li id="kwick4">
+				<div class="TOP"><a href="88.html">
+					The  eighth
+				</a></div>
+			</li><li id="kwick1">
+				<div class="TOP"><a href="like.html">
+					The  ninth
+				</a></div>
+			</li>
+			<li id="kwick2">
+				<div class="TOP"><a href="#">
+					The twenth
+				</a></div>
+			</li>
+		</ul>
+	<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>Writer:LiJiashen 李佳燊 18级网络工程一班</p>
+<p>学号：<a  target="_blank">201805550327</a></p>
+</div>
+</body>
 </html>
