@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/iconfont4.css">
+<link rel="stylesheet" type="text/css" href="css/waiter.css">
+<link rel="stylesheet" type="text/css" href="css/style5.css" />
+<script src="js/jquery-1.10.2.min5.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			body{
+				width: 1224px;
+				margin: 0 auto;
+			}
+			.footer{
+				width: 1224px;
+				height: auto;
+				background-color: #5BC0DE;
+			}
+			#foot1-1{
+				padding-left: 330px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg-grey">
+	              <div class="content">
+		<a href="#">
+			<h2 class="title">信巢</h2></a>
+		<p class="subtitle">一站式盈利性服务平台</p>
+		<div class="tab-block information-tab">
+			<div class="tab-buttons ">
+				<h3 class="tab-button cur" data-tab="one">提供服务</h3>
+				<h3 class="tab-button" data-tab="two">行业发展</h3>
+				<h3 class="tab-button" data-tab="three">解决问题 <span class="question-icon"></span></h3>
+			</div>
+			<div class="tabs">
+				<div class="tab-item active" id="tab-one">
+					<div class="information-tab">
+
+						<div class="information-left">
+							<a href="#">
+								<img src="images/TIM截图20181204014858.png" width="500" height="340" alt="共享经济 活该你倒闭！">
+							</a>
+							<a href="#">
+								<img src="images/TIM截图20181204015843.png" width="500" height="340" alt="共享经济 活该你倒闭！">
+							</a>
+							
+						</div>
+						<div class="article-list current">
+								
+									<div class="article-head ">
+										<span class="article-number">1</span>
+										<span class="article-title">时间出租拜访服务：</span>
+										<span class="article-time">[12-04]</span>
+									</div>
+									<div class="article-content">
+										<p>出租兼职大学生的时间照看老人，为老人做做饭，和老人聊聊天，时间出租兼有长期与短期之分，长期可达一个月乃至半年（结月工资），短期半天皆可（按小时收费)</p>
+									</div>
+									<div class="article-head ">
+										<span class="article-number">2</span>
+										<span class="article-title">电话聊天服务:</span>
+										<span class="article-time">[12-05]</span>
+									</div>
+									<div class="article-content">
+										<p>(提醒吃药，用餐，关心老人)兼职员工每日定时给老人打电话，关心老人，反馈给老人子女和公司留档，并且及时关注老人的各种动向，防止发生空巢老人被骗事件，及各种突发事件</p>
+									</div>
+									<div class="article-head ">
+										<span class="article-number">3</span>
+										<span class="article-title">三餐订购服务：</span>
+										<span class="article-time">[12-06]</span>
+									</div>
+									<div class="article-content">
+										<p>每天准时准点送达各种适合中老年人的餐点，营养均衡，依据不同的身体条件进行私人定制服务</p>
+									</div>
+									<div class="article-head ">
+										<span class="article-number">4</span>
+										<span class="article-title">特色课程服务：</span>
+										<span class="article-time">[12-07]</span>
+									</div>
+									<div class="article-content">
+										<p>提供各种中老年兴趣班，如表演，太极，书法等等，享受优质老年时光</p>
+									</div>
+									<div class="article-head ">
+										<span class="article-number">5</span>
+										<span class="article-title">意外突发保险：</span>
+										<span class="article-time">[12-08]</span>
+									</div>
+									<div class="article-content">
+										<p>不拍一万，就怕万一</p>
+									</div>
+									<div class="article-head ">
+										<span class="article-number">6</span>
+										<span class="article-title">老年基金代理服务：</span>
+										<span class="article-time">[12-09]</span>
+									</div>
+									<div class="article-content">
+										<p>让停滞增长的金钱活起来</p>
+									</div>
+								
+							</div>
+					</div>		
+
+							
+				</div>
+				<div class="tab-item" id="tab-two">
+					<div class="information-tab ">
+
+						
+						<div class="information-left">
+							<a href="#">
+								<img src="images/TIM截图20181204041553.png" width="230" height="200">
+							</a>
+							
+						</div>
+						<div class="information-left">
+							<a href="#">
+								<img src="images/TIM截图20181204040236.png" width="230" height="200">
+							</a>
+							
+						</div>
+					</div>
+				</div>
+				<div class="tab-item" id="tab-three">
+					<div class="information-tab ">
+
+						<div class="information-left">
+							<a href="#">
+								<img src="images/TIM截图20181204041141.png" width="500" height="340" alt="优秀的网上商城系统网站介绍">
+							</a>
+							
+
+						</div>
+						<div class="information-left">
+							<a href="#">
+								<img src="images/TIM截图20181204020707.png" width="500" height="340" alt="优秀的网上商城系统网站介绍">
+							</a>
+							
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	//tab切换		
+	$('.tab-button').click(function() {
+		var tab = $(this).data('tab')
+		$(this).addClass('cur').siblings('.tab-button').removeClass('cur');
+		$('#tab-' + tab + '').addClass('active').siblings('.tab-item').removeClass('active');
+	});
+	//新闻列表切换
+	$('.information-tab .article-list').hover(function() {
+		$(this).addClass('current').siblings('.article-list').removeClass('current');
+	}, function() {
+		$(this).parent('.information-right').find('.article-list:first-of-type').addClass('current').siblings('.article-list').removeClass('current');
+	});
+</script>
+		<div class="footer">
+						<div id="foot1-1">
+						<p>版权所有 © 信巢有限公司.<br> 地址：中国湖南湘潭湘潭大学南苑五栋105. <br>邮编：411105
+							<br />
+							</p>
+							<img src="images/IMG_20181203_204643.jpg" width="100px" height="100px" />&nbsp;&nbsp;&nbsp;&nbsp;
+							<img src="images/IMG_20181203_204719.jpg" width="100px" height="100px" />
+						</div>
+					</div>
+					<script type="text/javascript" src="js/jquery.min.js"></script>
+					<script type="text/javascript" src="js/Cooldog.js"></script>
+
+				</div>
+				<div class="wuyou-waiter">
+		<ul class="waiter-ul">
+			<li class="wuyou-shop">
+				<a class="iconfont icon-taobao" href="fwytl.html" target="_blank"></a>
+				<div class="waiter-title">联系我们</div>
+			</li>
+			<li class="wuyou-contact">
+				<a class="iconfont icon-aliww" href="zjwm.html" target="_blank"></a>
+				<div class="waiter-title">联系客服</div>
+			</li>
+			<li class="wuyou-top">
+			  <a class="iconfont icon-Upward" href="1010.html"></a>
+				<div class="waiter-title">回到顶部</div>
+			</li>
+		</ul>
+	</div>
+	</body>
+</html>
