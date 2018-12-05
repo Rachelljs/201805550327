@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="css/ydd.css"/>
+				<script src="js/ddd.js"></script>
+				<script src="js/ydd.js"></script>
+		<title>手机移动端</title>
+		
+	</head>
+	<body>
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>信巢</h1>
+    
+  </div>
+
+  <div data-role="content">
+   <img src="images/TIM截图20181203210043.png"width="100%"/>
+   <img src="images/TIM截图20181204014858.png" width="100%"/>
+   <img src="images/TIM截图20181204040236.png" width="100%"/>
+  </div>
+
+  <div data-role="footer">
+  	<div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="home">首页</a></li>
+        <li><a href="#page2" data-icon="arrow-r">服务</a></li>
+        <li><a href="#page3" data-rel="dialog" data-icon="search">登陆</a></li>
+      </ul>
+    </div>
+    <h1>所爱隔山海，山海皆可平</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="page3">
+  <div data-role="content">
+    <form method="post" action="demoform.asp">
+    	 <label for="fname">被服务人姓名：</label>
+      <input type="text" name="fname" id="fname">
+      <label for="fname">选择服务人姓名：</label>
+      <input type="text" name="fname" id="fname">
+      <label for="fname">联系电话：</label>
+      <input type="text" name="fname" id="fname">
+      <label for="fname">住址：</label>
+      <input type="text" name="fname" id="fname">
+      <form method="post" action="demoform.asp">
+      <fieldset data-role="fieldcontain">
+        <label for="day">与被服务人关系</label>
+        <select name="day" id="day">
+        	<option value="mon">自己</option>
+         <option value="mon">子女</option>
+         <option value="tue">兄弟姊妹</option>
+         <option value="wed">亲戚</option>
+         <option value="thu">其他</option>
+        
+        </select>
+      </fieldset>
+    </form>
+
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+  </div>
+</div>
+
+<div id="page2">
+  <div data-role="header">
+    <h1>信巢</h1>
+    
+  </div>
+
+  <div data-role="content">
+   <img src="images/TIM截图20181204015843.png"width="100%"/>
+   <img src="images/TIM截图20181204041141.png" width="100%"/>
+   <img src="images/TIM截图20181204040236.png" width="100%"/>
+  </div>
+
+  <div data-role="footer">
+  	<div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="home">首页</a></li>
+        <li><a href="#page2" data-icon="arrow-r">服务</a></li>
+        <li><a href="#page3" data-rel="dialog" data-icon="search">登陆</a></li>
+      </ul>
+    </div>
+    <h1>所爱隔山海，山海皆可平</h1>
+  </div>
+</div> 
+	</body>
+</html>
